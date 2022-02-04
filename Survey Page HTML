@@ -1,0 +1,247 @@
+<!--Header-->
+<div class="container">
+  <header class="header">
+    <h1 id="title">Lan Dang's Survey Form</h1>
+      <p id="description" class="description-text">We appreciate your aid by partaking in this survey</p>
+  </header>
+  
+  
+<!--Survey Form-->
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name:</label>
+        <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name here"
+              required
+          />
+      </div>
+    <div class="form-group">
+      <label id="number-label" for="age">Age:</label>
+        <input
+              type="number"
+              id="number"
+              class="form-control"
+              min="10"
+              max="100"
+              placeholder="Enter your age here"
+          />
+      </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email:</label>
+        <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your email here"
+              required
+          />
+      </div>
+    <div class="form-group">
+      <label id="tel-label" for="tel">Mobile (not required):</label>
+        <input
+              type="tel"
+              id="tel"
+              class="form-control"
+              placeholder="Enter your mobile here"
+          />
+      </div>
+    <div class="form-group">
+      <label>How many times do you go to the cinema per week?</label>
+        <select id="dropdown" name="frequency" class="form-control" required>
+             <option disabled selected value>No. of time going to cinema/week</option>
+             <option value="Once">Once</option>
+             <option value="Twice">Twice</option>
+             <option value="Three-times">Three times</option>
+             <option value="Four-times">Four times</option>
+             <option value="Five-times">Five times</option>
+             <option value="More">More than five times</option>
+        </select>
+      </div>
+    
+ <!--Movie Genres-->
+    <div class="form-group">
+      <p>What genres of movie do you usually watch?</p>
+        <label>
+          <input
+              name="genres"
+              value="Action"
+              type="checkbox"
+              class="input-checkbox"
+              />Action
+        </label>
+        <label>
+          <input
+              name="genres"
+              value="Comedy"
+              type="checkbox"
+              class="input-checkbox"
+              />Comedy
+        </label>
+        <label>
+          <input
+              name="genres"
+              value="Drama"
+              type="checkbox"
+              class="input-checkbox"
+              />Drama
+        </label>
+        <label>
+          <input
+              name="genres"
+              value="Fantasy"
+              type="checkbox"
+              class="input-checkbox"
+              />Fantasy
+        </label>
+        <label>
+          <input
+              name="genres"
+              value="Horror"
+              type="checkbox"
+              class="input-checkbox"
+              />Horror
+        </label>
+        <label>
+          <input
+              name="genres"
+              value="Mystery"
+              type="checkbox"
+              class="input-checkbox"
+              />Mystery
+        </label>
+        <label>
+          <input
+              name="genres"
+              value="Romance"
+              type="checkbox"
+              class="input-checkbox"
+              />Romance
+        </label>
+        <label>
+          <input
+              name="genres"
+              value="Thriller"
+              type="checkbox"
+              class="input-checkbox"
+              />Thriller
+        </label>
+      </div>
+      
+ <!--Membership-->
+      <div class="form-group">
+      <p>Do you hold a membership account at your local cinema?</p>
+        <label>
+          <input
+              name="cinema-membership"
+              value="yes"
+              type="radio"
+              class="input-radio"
+              checked
+              />Yes
+        </label>
+        <label>
+          <input
+              name="cinema-membership"
+              value="no"
+              type="radio"
+              class="input-radio"
+              />No
+        </label>
+      </div>
+        
+<!--Trailer Question-->
+      <div class="form-group">
+      <p> If the trailer is long and shows more footage are you more or less likely to watch it in cinema?</p>
+         <label>
+           <input
+                 name="trailer-ads"
+                 value="More-Likely"
+                 type="radio"
+                 class="input-radio"
+                 checked
+                  />More Likely
+           </label>
+         <label>
+           <input
+                 name="trailer-ads"
+                 value="Less-Likely"
+                 type="radio"
+                 class="input-radio"
+                 />Less Likely
+           </label>
+         <label>
+           <input
+                 name="trailer-ads"
+                 value="Not-Affected"
+                 type="radio"
+                 class="input-radio"
+                 />Not Affected
+           </label>
+        </div>
+        
+<!--Accompany-->
+     <div class="form-group">
+      <p>Who do you often go to the cinema with?</p>
+        <label>
+          <input
+                name="accompany"
+                value="Friends"
+                type="checkbox"
+                class="input-checkbox"
+              />Friends
+        </label>
+       
+        <label>
+          <input
+                name="accompany"
+                value="Family"
+                type="checkbox"
+                class="input-checkbox"
+              />Family
+        </label>
+       
+        <label>
+          <input
+                name="accompany"
+                value="Partner"
+                type="checkbox"
+                class="input-checkbox"
+              />Partner
+        </label>
+       
+       <label>
+          <input
+                name="accompany"
+                value="By-yourself"
+                type="checkbox"
+                class="input-checkbox"
+              />By Yourself
+        </label>
+      </div>
+        
+<!--Comment-->
+      <div class="form-group">
+        <p>What is your favourite movie and what do you like about it?</p>
+          <textarea
+                    id="comments"
+                    class="input-textarea"
+                    name="comments"
+                    placeholder="Enter your answer here"
+                    >
+           </textarea>
+        
+<!--Submit-->
+      <div class="form-group">
+        <button
+                type="submit"
+                class="submit-button"
+                id="submit"
+                >Submit
+        </button>
+      </div>
+     </form>
+    </div>
