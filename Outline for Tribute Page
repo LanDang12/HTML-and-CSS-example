@@ -1,0 +1,109 @@
+<!--Image-->
+<main id="main">
+  <figure id="img-div">
+    <image id="image" src="https://3.bp.blogspot.com/-PlJTvDfSO9E/XKWxkph-gPI/AAAAAAAABPc/NvU6EPP23xQiQqLgadBvg3bx_aFRK52sACKgBGAs/w0/avengers-endgame-iron-man-tony-stark-uhdpaper.com-4K-82.jpg" alt="Tony Stark in his final armor">
+      <figcaption id="img-caption"> Iron-Man before his final showdown against Thanos</figcaption>
+      </figure>
+ 
+
+<!--Header-->    
+  <h1 id="title">Tony Stark</h1>
+    <h2>The Invincible Iron-Man</h2>
+    
+ 
+ <!--Tribute Info-->
+  <section id="tribute-info">
+    <h3>About Him:</h3>
+      <ul>
+        <li><b>1970</b> - Born as Anthony Edward Stark to Howard Stark in Manhattan.</li>
+        
+        <li><b>1991</b> - Lost both of his parents to a car accident later reveal to be an assassination plot from <i>Hydra</i>.</li>
+        
+        <li><b>1992</b> - Took over Stark Industry Ltd. Pty.</li>
+        
+        <li><b>Early 2009</b> - Taken prisoner by the Ten Rings, a terrorist organisation. He later escaped with the aid of his iconic Iron-Man armor.</li>
+        
+        <li><b>Late 2009</b> - Fought off a murder attempt by his long-time mentor and father figure, Obidiah Stane.</li>
+        
+        <li><b>2010</b> - Thwarted an assassination attempt by Ivan Vanko - <i>Whiplash</i>. Whiplash was later killed during Stark Expo 2010 due to his sef-destruct mechanism.</li> 
+        
+        <li><b>Middle 2012</b> - The Avengers of which Tony was a part of defeated an alien invasion spearheaded by <i>Loki</i>.</li>
+        
+        <li><b>Late 2012</b> - AIM destroyed Tony Malibu's house. AIM's leader Aldrich Killian - the <i>Mandarin</i>, was killed after he tried to assassinate the US's president.</li>
+        
+        <li><b>2015</b> - Ultron - an AI created by Tony, went rouge and was later put down through the combine efforst of the Avengers.</li>
+        
+        <li><b>2016</b> - Tony signed the Sokovian Accords, signifying the disbandment of the Avengers through in-fighting.</li>
+        
+        <li><b>2018</b> - He failed to stopped Thanos from acquiring the Time Stone resulting in <strong><i>the Blip</i></strong>. He later retired in the same year.
+         
+        <li><b>2019</b> - Morgan Howard Stark was born to Anthony Edward Stark and Pepper Potts.</li>
+        
+        <li><b>2023</b> - A time travel heist was planned with the complication of Thanos travelling to this year. Tony sacrificed himself to snapped Thanos out of existence along with his army.</li>
+     </ul>
+    
+    <blockquote cite="https://kidadl.com/articles/best-tony-stark-quotes-from-marvels-most-sarcastic-superhero">
+      "No amount of money ever bought a second of time" -- Tony Stark
+    </blockquote>
+    
+    
+<!--Armors Section-->    
+    <h3>Notable Iron-Man armor throughout the year:</h3>
+    <div class="armor">
+      <div>   
+      <img id="Mk.I" src="https://static.wikia.nocookie.net/marveldatabase/images/3/3c/Iron_Man_Armor_MK_I_%28Earth-199999%29.jpg" alt="Iron-Man Mark 1">
+          <figcaption id="Armor cap">2009 - Used to escaped the Ten Rings</figcaption>
+      </div>
+         
+      <div>
+      <img id="Mk.III" src="https://static.wikia.nocookie.net/marveldatabase/images/e/e1/Iron_Man_Armor_MK_III_%28Earth-199999%29.jpg" alt="Iron-Man Mark 3">
+           <figcaption id="Armor cap">2009 - Used to fight Obadiah Stane</figcaption>
+      </div>
+      
+      <div>
+      <img id="Mk.VI" src="https://static.wikia.nocookie.net/marveldatabase/images/f/fe/Iron_Man_Armor_MK_VI_%28Earth-199999%29.jpg" alt="Iron-Man Mark 6">
+           <figcaption id="Armor cap">2010 - Incorporated new Arc Reactor</figcaption>
+      </div>
+    
+      <div>
+      <img id="Mk.VII" src="https://static.wikia.nocookie.net/marveldatabase/images/e/ea/Iron_Man_Armor_MK_VII_%28Earth-199999%29.jpg" alt="Iron-Man Mark 7">
+           <figcaption id="Armor cap">2012 - Used in the alien invasion in New York</figcaption>
+      </div>
+    
+      <div>
+      <img id="Mk.XLII" src="https://static.wikia.nocookie.net/marveldatabase/images/9/92/Iron_Man_Armor_MK_XLII_%28Earth-199999%29.jpg" alt="Iron-Man Mark 42">
+           <figcaption id="Armor cap">2012 - Able to self-assemble on the flight</figcaption>
+      </div>
+    
+      <div>      
+      <img id="Mk.XLIII" src="https://static.wikia.nocookie.net/marveldatabase/images/3/39/Iron_Man_Armor_MK_XLIII_%28Earth-199999%29.png" alt="Iron-Man Mark 43">
+           <figcaption id="Armor cap">2015 - Used against Ultron</figcaption>
+      </div>
+             
+      <div>
+      <img id="MkXLIV" src="https://static.wikia.nocookie.net/marveldatabase/images/2/28/Iron_Man_Armor_MK_XLIV_%28Earth-199999%29_from_Avengers_Age_of_Ultron_001.png" alt="Iron-Man Mark 44">
+           <figcaption id="Armor cap">2015 - Also known as Hulkbuster</figcaption>
+      </div>
+
+      <div>
+      <img id="Mk.XLVI" src="https://static.wikia.nocookie.net/marveldatabase/images/5/56/Iron_Man_Armor_MK_XLVI_%28Earth-199999%29_001.png" alt="Iron-Man Mark 46">
+            <figcaption id="Armor cap">2016 - Used in an attempt to apprehend Captain America</figcaption>
+      </div>
+    
+      <div>
+      <img id="Mk.L" src="https://static.wikia.nocookie.net/marveldatabase/images/2/27/Iron_Man_Armor_MK_L_%28Earth-199999%29.jpg" alt="Iron-Man Mark 50">
+           <figcaption id="Armor cap">2018 - Used nano tech to fight Thanos</figcaption>
+      </div>
+
+    
+      <div>
+      <img id="Mk.LXXXV" src="https://static.wikia.nocookie.net/marveldatabase/images/1/18/Iron_Man_Armor_MK_LXXXV_%28Earth-199999%29.jpg" alt="Iron-Man Mark 85">
+           <figcaption id="Armor cap">2023 - His final armor</figcaption>
+      </div>
+    </div>
+    
+    
+<!--Wiki Link-->
+    <p>For more information on Tony Stark life you can click <a id="tribute-link" href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man" target="_blank"> here </a> 
+    </section>
+</main>
