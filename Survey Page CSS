@@ -1,0 +1,153 @@
+/*Import*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+
+/*Box and font sizing*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 2;
+  color: #fff;
+  margin: 0;
+}
+
+
+/*Background Image*/
+/*Borrow code from FCC example*/ /*link: https://codepen.io/freeCodeCamp/full/VPaoNP*/
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  background: #25C0C0;
+  background-image: linear-gradient(
+      155deg,
+      rgba(127, 0, 255, 0.3),
+      rgba(0, 100, 206, 0.5)
+      ),
+    url(https://i.imgur.com/9GyUbrB.jpeg);
+  background-size: auto;
+  background-position: center;
+} /*End of borrwed code*/
+
+
+/*Header*/
+h1 {
+  font-weight: 700;
+  line-height: 2;
+  margin: 1.5rem 0rem 1.5rem 0rem; 
+}
+
+p {
+  font-weight: 200;
+  line-height: 1.5;
+  margin: 0.75rem 0 3rem 0;
+}
+
+.description-text {
+  font-style: italic;
+  font-weight: 400;
+}
+
+
+/*Survey Form Box*/
+form {
+  background: #2D0050;
+  padding: 3rem 1.25rem;
+  border-radius: 1rem;
+}
+
+.container {
+  width: 100%;
+  margin: 5rem auto;
+}
+
+@media (min-width: 35em) {
+  .container {
+    max-width: 35em;
+  }
+}
+
+@media (min-width: 50em) {
+  .container {
+    max-width: 50em;
+  }
+}
+
+
+/*Survey Form Content*/
+label {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  font-size: 1.5rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.form-group {
+  margin: 0 auto;
+  padding: 0.25rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  background-color: #FFF;
+  border: 1px solid;
+}
+
+.form-control:focus {
+  background-color: #EEEEEE;
+}
+
+/*Answer sections*/
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inehrit;
+}
+
+.input-checkbox,
+.input-radio {
+  display: block;
+  margin: 0 1rem 0 0;
+  height: 2rem;
+  width: auto;
+}
+
+.input-textarea {
+  min-height: 150px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: horizontal;
+  border-radius: 15px 60px 30px;
+}
+
+.submit-button {
+  margin: auto;
+  display: block;
+  width: 30%;
+  padding: 0.85rem;
+  background: #37af65;
+  color: inherit;
+  border-radius: 1rem;
+  cursor: pointer;
+}
