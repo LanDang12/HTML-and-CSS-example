@@ -1,0 +1,336 @@
+<title>Python's Technical Page by Lan Dang</title>
+
+
+<!--Nav Element-->
+
+<nav id="navbar">
+<!--Python Logo-->
+  <header>
+  <h1>Python</h1>
+  <img class="python_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python Logo">
+  </header>
+<!--End Logo-->
+  <ul>
+    <li> <a class="nav-link" href="#Introduction"> Introduction</a> </li>
+    <li> <a class="nav-link" href="#Things_to_know_before_learning_Python">Things to know before learning Python</a> </li>
+    <li> <a class="nav-link" href="#Control_flow">Control flow</a> </li>
+    <li> <a class="nav-link" href="#Python_functions">Python functions</a> </li>
+    <li> <a class="nav-link" href="#References">References</a> </li>
+  </ul>
+</nav>
+
+<!--End of nav-->
+
+
+<main id="main-doc">
+<!--Introduction-->
+<div>
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+      <article>
+        <p>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms</p>
+        <p>The Python interpreter and the extensive standard library are freely available in source or binary form for all major platforms from the Python web site and may be freely distributed. The Python interpreter is easily extended with new functions and data types implemented in C or C++ (or other languages callable from C). Python is also suitable as an extension language for customizable applications.</p>
+        <p>Python enables programs to be written compactly and readably. Programs written in Python are typically much shorter than equivalent C, C++, or Java programs.</p>
+      </article>
+  </section>
+</div>
+<!--End of introduction-->
+
+
+<!--Things to know-->
+<div>
+  <section class="main-section" id="Things_to_know_before_learning_Python">
+    <header>Things to know before learning Python</header>
+      <article>
+        <ol>
+          <li><h3>Python is an interpreted language:</h3></li>
+            <p>Python interpreted directly from the source code, commonly referred to as “scripts”. For example, the following code:</p>
+            <code>
+print(‘Hello World’)
+            </code>
+            <p>When saved to a file, for example <i>hello.py</i> can be passed to a Python interpreter without the need for an explicit compilation step:</p>
+            <code>
+$ python hello.py
+Hello World
+            </code>
+          
+          <li><h3>Python is object-oriented, but not exclusively:</h3></li>
+            <p>If you come from an object-oriented background, particularly Java where everything is an object, the hello.py example may look a little strange. The single-line script not only doesn’t define any classes, but it isn’t even inside of a method declaration.</p>
+
+            <p>Python supports object-oriented programming, but you aren’t locked into it. You can add functions directly to a script when there isn’t a need for the overhead and complication of defining a class.</p>
+
+            <p>For example, take the following (obviously academic) class:</p>
+            <code>
+              <pre>
+class PhoneNumber(object):
+
+def __init__(self, area_code, number) -> None:
+    self.area_code = area_code
+    self.number = number
+
+def display(self):
+    print(f'({self.area_code}) {self.number}')
+
+pn = PhoneNumber('973', '555-1234')
+pn.display()
+              </pre>
+            </code>
+            <p>Running this script produces the formatted output <i>(973) 555-1234</i>.</p>
+            <p>If the output is the only goal, it arguably doesn’t need to be a class. You could rewrite it as a function, instead:</p>
+            <code>
+              <pre>
+def display_pn(area_code, number):
+    print(f'({area_code}) {number}')
+
+display_pn('973', '555-7890')
+              </pre>
+            </code>
+            <p>A third option is to combine the two, defining stateless functions where appropriate and having objects use those methods:</p>
+            <code>
+              <pre>
+class PhoneNumber(object):
+
+def __init__(self, area_code, number) -> None:
+    self.area_code = area_code
+    self.number = number
+
+def display(self):
+    display_pn(self.area_code, self.number)
+
+def display_pn(area_code, number):
+    print(f'({area_code}) {number}')
+
+pn = PhoneNumber('973', '555-1234')
+pn.display()
+              </pre>
+            </code>
+          
+          <li><h3>Whitespace matters in Python:</h3></li>
+            <p>Python uses indentation to indicate scope, freeing it from the arguments about curly brace placement that other languages encounter. Generally speaking, a code block is defined by statements that share the same indentation level. Looking at the phone number example:</p>
+            <code>
+              <pre>
+class PhoneNumber(object):
+
+def __init__(self, area_code, number) -> None:
+    self.area_code = area_code
+    self.number = number
+
+def display(self):
+    display_pn(self.area_code, self.number)
+
+def display_pn(area_code, number):
+    print(f'({area_code}) {number}')
+             </pre>
+            </code>
+            <p>The two assignments in the<i>__init__</i> method (Python's implementation of a constructor) are considered part of the method definition. We know this because they are indented further than the declaration and share the same indentation level. If the second statement (<i>self.number = number</i>) was offset by even a single space in either direction, the code would fail to run (with an error similar to <i>IndentationError: unexpected indent</i>).</p>
+            <p>Along the same lines, the <i>display_pn</i> function is indented at the same level as the <i>PhoneNumber</i> class, indicating it is not part of the class definition. Keep in mind, however, that the indentation of the body of <i>display_pn</i>has no bearing on the bodies of the class methods (in other words, there are no syntactic implications to the fact that the body of <i>display_pn</i> and the definition of <i>display()</i> are both indented by four spaces).</p>
+        </ol>
+      </article>
+  </section>
+</div>
+<!--End of TTK-->
+  
+  
+<!--Control Flow-->
+<div>
+  <section class="main-section" id="Control_flow">
+    <header>Control flow</header>
+      <article>
+        <p>Python usually uses flow control statements like other languages but with its own twist. Here are some of them</p>
+        <ol>
+          <li><h3>The <i>while</i> statements:</h3></li>
+          <p>It is used for repeated execution as long as an expression is true:</p>
+          <code>
+            <pre>
+while_stmt ::=  "while" assignment_expression ":" suite
+                ["else" ":" suite]
+            </pre>
+          </code>
+          <p>This repeatedly tests the expression and, if it is true, executes the first suite; if the expression is false (which may be the first time it is tested) the suite of the else clause, if present, is executed and the loop terminates.</p>
+      
+          <li><h3>The <i>for</i> loops:</h3></li>
+          <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string). This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages. With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+          <code>
+            <pre>
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+            </pre>
+          </code>
+          
+          <li><h3>The <i>for</i> loops:</h3></li>
+          <p>In this example we use two variables, a and b, which are used as part of the if statement to test whether b is greater than a. As a is 33, and b is 200, we know that 200 is greater than 33, and so we print to screen that "b is greater than a".</p>
+          <code>
+            <pre>
+a = 33
+b = 200
+if b > a:
+  print("b is greater than a")
+            </pre>
+          </code>
+
+         </ol>
+          </article>
+  </section>
+</div>
+<!--End of CF-->
+
+
+<!--Functions-->
+<div>
+  <section class="main-section" id="Python_functions">
+    <header>Python functions</header>
+      <article>
+      <p>A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.</p>
+        <ol>
+          <li><h3><i>Defining</i> functions:</h3></li>
+            <code>
+              <pre>
+def fib(n):    # write Fibonacci series up to n
+"""Print a Fibonacci series up to n."""
+a, b = 0, 1
+while a < n:
+    print(a, end=' ')
+    a, b = b, a+b
+print()
+
+# Now call the function we just defined:
+fib(2000)
+              </pre>
+            </code>
+            <p>The keyword def introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters. The statements that form the body of the function start at the next line, and must be indented.</p>
+            <p>The first statement of the function body can optionally be a string literal; this string literal is the function’s documentation string, or docstring. (More about docstrings can be found in the section Documentation Strings.) There are tools which use docstrings to automatically produce online or printed documentation, or to let the user interactively browse through code; it’s good practice to include docstrings in code that you write, so make a habit of it.</p>
+            <p>The execution of a function introduces a new symbol table used for the local variables of the function. More precisely, all variable assignments in a function store the value in the local symbol table; whereas variable references first look in the local symbol table, then in the local symbol tables of enclosing functions, then in the global symbol table, and finally in the table of built-in names. Thus, global variables and variables of enclosing functions cannot be directly assigned a value within a function (unless, for global variables, named in a global statement, or, for variables of enclosing functions, named in a nonlocal statement), although they may be referenced.</p>
+            <p>The actual parameters (arguments) to a function call are introduced in the local symbol table of the called function when it is called; thus, arguments are passed using call by value (where the value is always an object reference, not the value of the object). When a function calls another function, or calls itself recursively, a new local symbol table is created for that call.</p>
+
+          <li><h3>Arguments:</h3></li>
+            <p>Information can be passed into functions as arguments. Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma. The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:</p>
+            <code>
+              <pre>
+def my_function(fname):
+    print(fname + " Refsnes")
+
+my_function("Emil")
+my_function("Tobias")
+my_function("Linus")
+              </pre>
+            </code>
+            <p><b>Positional-Only Parameters:</b> it is possible to mark certain parameters as positional-only. If positional-only, the parameters’ order matters, and the parameters cannot be passed by keyword. Positional-only parameters are placed before a <i>/</i> (forward-slash). The <i>/</i> is used to logically separate the positional-only parameters from the rest of the parameters. If there is no <i>/</i> in the function definition, there are no positional-only parameters. Parameters following the <i>/</i> may be positional-or-keyword or keyword-only.</p>
+            <p><b>Keyword-Only Parameters:</b> to mark parameters as keyword-only, indicating the parameters must be passed by keyword argument, place an <i>*</i> in the arguments list just before the first keyword-only parameter.</p>
+            <p>Consider the following example function definitions paying close attention to the markers <i>/</i> and *:</p>
+            <code>
+              <pre>
+def standard_arg(arg):
+    print(arg)
+
+def pos_only_arg(arg, /):
+    print(arg)
+
+def kwd_only_arg(*, arg):
+    print(arg)
+
+def combined_example(pos_only, /, standard, *, kwd_only):
+    print(pos_only, standard, kwd_only)
+              </pre>
+            </code>
+            <p>The first function definition, <i>standard_arg</i>, the most familiar form, places no restrictions on the calling convention and arguments may be passed by position or keyword:</p>
+            <code>
+              <pre>
+standard_arg(2)
+
+
+standard_arg(arg=2)
+              </pre>
+            </code>
+            <p>The second function <i>pos_only_arg</i> is restricted to only use positional parameters as there is a <i>/</i> in the function definition:</p>
+            <code>
+              <pre>
+    pos_only_arg(1)
+1
+
+    pos_only_arg(arg=1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: pos_only_arg() got some positional-only arguments passed as keyword arguments: 'arg'
+              </pre>
+            </code>
+            <p>The third function <i>kwd_only_args</i> only allows keyword arguments as indicated by a <i>*</i> in the function definition:</p>
+            <code>
+              <pre>
+    kwd_only_arg(3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: kwd_only_arg() takes 0 positional arguments but 1 was given
+
+    kwd_only_arg(arg=3)
+3
+              </pre>
+            </code>
+            <p>And the last uses all three calling conventions in the same function definition:</p>
+            <code>
+              <pre>
+    combined_example(1, 2, 3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: combined_example() takes 2 positional arguments but 3 were given
+
+    combined_example(1, 2, kwd_only=3)
+1 2 3
+
+    combined_example(1, standard=2, kwd_only=3)
+1 2 3
+
+    combined_example(pos_only=1, standard=2, kwd_only=3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: combined_example() got some positional-only arguments passed as keyword arguments: 'pos_only'
+              </pre>
+            </code>
+            <p>Finally, consider this function definition which has a potential collision between the positional argument <i>name</i> and <i>**kwds</i> which has <i>name</i> as a key:</p>
+            <code>
+              <pre>
+def foo(name, **kwds):
+    return 'name' in kwds
+              </pre>
+            </code>
+            <p>There is no possible call that will make it return <i>True</i> as the keyword <i>'name'</i> will always bind to the first parameter. For example:</p>
+            <code>
+              <pre>
+    foo(1, **{'name': 2})
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: foo() got multiple values for argument 'name'
+              </pre>
+            </code>
+            <p>But using <i>/</i> (positional only arguments), it is possible since it allows <i>name</i> as a positional argument and <i>'name'</i> as a key in the keyword arguments:</p>
+            <code>
+              <pre>
+def foo(name, /, **kwds):
+    return 'name' in kwds
+    foo(1, **{'name': 2})
+True
+              </pre>
+            </code>
+            <p>In other words, the names of positional-only parameters can be used in <i>**kwds</i> without ambiguity.</p>
+        </ol>
+      </article>
+  </section>
+</div>
+<!--End of Functions-->
+
+          
+<!--References-->
+<div>
+  <section class="main-section" id="References">
+    <header>References</header>
+      <ul>
+        <li> <a href="https://docs.python.org/3/tutorial/" target="_blank">Python Documentation</a> </li>
+        <li> <a href="https://developers.redhat.com/articles/2021/09/10/five-things-know-learning-python#1__python_is_an_interpreted_language" target="_blank">Five things to know before learning Python</a> </li>
+        <li> <a href="https://www.w3schools.com/python/python_functions.asp" target="_blank"> W3Schools Python Functions</a> </li>
+        <li> <a href="https://www.w3schools.com/python/python_for_loops.asp" target="_blank"> W3Schools Python for loops</a> </li>
+        <li> <a href="https://www.w3schools.com/python/python_conditions.asp" target="_blank"> W3Schools Python if statements</a> </li>
+      </ul>
+    </section>
+</div>
+<!--End of reference-->
+</main>
