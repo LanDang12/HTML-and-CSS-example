@@ -1,0 +1,201 @@
+/*Import_Font*/
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+
+/*Nav Menu*/
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 10px;
+  left: 10px;
+  width: 14vw;
+  height: auto;
+  background-color: black;
+  border-radius: 1rem;
+}
+
+@media (max-width: 37.5em) {
+  #navbar {
+    overflow: scroll;
+  }
+}
+
+
+/*Logo*/
+header {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+}
+
+h1 {
+  color: green;
+  margin: 30px 15px 0px 50px;
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz', 'Open Sans', Arial, sans-serif;
+  font-size: 3.8em;
+  font-weight: thin;
+}
+
+img {
+  width: 3vw;
+  height: auto;
+  margin: 30px 0px 0px 0px;
+}
+
+@media (max-width: 37.5em) {
+  img {
+  width: 15vw;
+  height: auto;
+  margin: 30px 0px 0px 0px;
+}
+}
+
+
+/*Nav Menu Elements*/
+#navbar ul {
+  height: 90%;
+  padding: 0.5;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #4d4e53;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: rgb(0, 246, 49);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar a:hover {
+  color: rgb(255, 255, 255)
+}
+
+@media (max-width: 37.5em) {
+ #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+ #navbar {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 45vh;
+    border: none;
+    z-index: 1;
+  }
+}
+
+
+/*Main doc*/
+#main-doc {
+  display: flex-box;
+  width: 76vw;
+  height: auto;
+  background-color: black;
+  border-radius: 1rem;
+  justify-self: flex-end;
+  margin: 2vw 6vw 0vw 20vw;
+}
+
+#main-doc {
+  color: rgb(0, 246, 49);
+}
+
+div {
+  margin: 0rem 8rem 2rem 8rem;
+}
+
+#main-doc header {
+  font-size: 2.85rem;
+  color: green;
+}
+
+#main-doc h2, h3, h4, h5 {
+  font-size: 1.35rem;
+  style: bold;
+  color: rgb(255, 221, 79);
+}
+
+#main-doc li {
+  color: rgba(57,122,178,255);
+  list-style: none;
+}
+
+#main-doc p {
+  line-height: 2;
+  font-size: 1.35em;
+  min-width: 290px;
+  max-width: 70vw;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: rgba(57,122,178,255);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  text-color: black;
+}
+
+@media (max-width: 37.5em) {
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 50vh;
+    width: 100vw;
+  }
+  
+  #main-doc header {
+    font-size: 2.25rem;
+  }
+  
+  #main-doc p {
+    font-size: 1rem;
+    margin-right: 0px;
+  }
+  
+  div{
+    margin: 0rem;
+  }
+  
+  code {
+    margin-left: -15px;
+    width: 90vw;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 0px;
+    min-width: 233px;
+    overflow: scroll;
+  }
+}
+
+/*Reference*/
+#References a {
+  color: rgba(57,122,178,255);
+}
+
+#References a:hover {
+  color: white;
+}
