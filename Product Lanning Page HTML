@@ -1,0 +1,209 @@
+<!--Logo and Nav bar-->
+<div id="page-wrapper">
+    <header id="header">
+      <div class="logo">
+        <img id="header-img" src="https://cdn.shopify.com/s/files/1/0367/9538/3941/files/Banneton_Man_3_1600x.png?v=1588893166" alt="Banneton Man Company Logo">
+      </div>
+  
+      <div>
+        <nav id="nav-bar">
+          <ul>
+            <li> <a class="nav-link" href="#awards">Awards</a> </li>
+            <li> <a class="nav-link" href="#products"> Products</a> </li>
+            <li> <a class="nav-link" href="#instruction-video">How to care and store</a> </li>
+            <li> <a class="nav-link" href="#newsletter"> Newsletter</a> </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+  
+<!--Awards sec-->  
+    <body> 
+    <div class="container">
+      <section id="awards">
+        <h2>Our Achievements</h2>
+        <div class="grid">
+          <div class="first-award">
+            <img class="awards-logo" src="https://givemechallenge.com/wp-content/uploads/2021/04/The-Best-Brand-Awards-2021.png" alt="2021 Best Brand Awards">
+            <h3 class="awards-name">Best Banneton Seller of 2021</h3>
+            <p class="awards-description">We are proudly introducing ourselves as the best supplier for Banneton in Australia through the cumulative goodwill built by our store since its establishment in 1979.</p>
+          </div>
+          
+          <div class="second-award">
+            <img  class="awards-logo" src="http://ww1.prweb.com/prfiles/2021/06/28/18038085/Globee%20SalesService-2021-Gold-PNG-1.png" alt="2021 Best Customer Service Awards">
+            <h3 class="awards-name">Best Customer Service Provider of 2021</h3>
+            <p class="awards-description">2021 was a good year for our business as we also received the Globbee Golden Awards for providing the best customer services in our industry. We provide refund for defectective products and insurance for delivery. In addition, our customers can also converse with us through either social media, in-store staffs, phone, email and fax.</p>
+         </div>
+    </div>
+   </section>
+    
+ 
+<!--Products sec-->      
+    <div class="container">
+      <section id="products">
+                  <a href="https://bannetonman.com.au/collections/banneton" target="_blank"><h2>Our Banneton Baskets</h2></a>
+        </div>
+        <div class="products-flex">
+        <div>
+          <a href="https://bannetonman.com.au/collections/banneton/products/round-banneton-baskets" target="_blank">
+            <img class="products-img" src="https://cdn.shopify.com/s/files/1/0367/9538/3941/products/roundbannetonbaskets_600x.jpg?v=1617146599">
+          <h3 class="products-name">Round Banneton Baskets</h3>  
+          </a>
+          <p class="products-price">from 15.00AUD</p>
+        </div>
+                
+        <div>
+          <a href="https://bannetonman.com.au/collections/banneton/products/rectangle-banneton-baskets" target="_blank">
+            <img class="products-img" src="https://cdn.shopify.com/s/files/1/0367/9538/3941/products/Untitleddesign_45_600x.png?v=1618466827">
+          <h3 class="products-name">Rectangular Banneton Baskets</h3>  
+          </a>
+          <p class="products-price">from 18.00AUD</p>
+        </div>  
+        
+        <div>
+          <a href="https://bannetonman.com.au/products/french-baguette-banneton-basket" target="_blank">
+            <img class="products-img" src="https://cdn.shopify.com/s/files/1/0367/9538/3941/products/frenchbagettebannetonbasket_600x.jpg?v=1617146472">
+          <h3 class="products-name">French Baguette Banneton Baskets</h3>  
+          </a>
+          <p class="products-price">from 28.00AUD</p>
+        </div>  
+        
+        <div>
+          <a href="https://bannetonman.com.au/products/bread-roll-banneton-baskets" target="_blank">
+            <img class="products-img" src="https://cdn.shopify.com/s/files/1/0367/9538/3941/products/breadrollbannetonbasket_600x.jpg?v=1617146472">
+          <h3 class="products-name">Bread Roll Banneton Baskets</h3>  
+          </a>
+          <p class="products-price">from 12.00AUD</p>
+        </div>
+        
+        <div>
+          <a href="https://bannetonman.com.au/products/rectangle-banneton-baskets" target="_blank">
+            <img class="products-img" src="https://cdn.shopify.com/s/files/1/0367/9538/3941/products/Untitleddesign_45_600x.png?v=1618466827">
+          <h3 class="products-name">Rectangular Banneton Baskets</h3>  
+          </a>
+          <p class="products-price">from 25.00AUD</p>
+        </div>
+        
+        <div>
+          <a href="https://bannetonman.com.au/collections/banneton/products/banneton-liner" target="_blank">
+            <img class="products-img" src="https://cdn.shopify.com/s/files/1/0367/9538/3941/products/Untitleddesign_47_600x.png?v=1618466708">
+          <h3 class="products-name">Banneton Basket Liners</h3>  
+          </a>
+          <p class="products-price">from 5.00AUD</p>
+        </div>
+      </div>    
+     </section>
+    </div>
+        
+        
+        
+  <!--How to care for products sec-->
+    <div class="container">
+      <section id="instruction-video">
+        <h2>How to care and store</h2>
+          <iframe width="560" height="315" id="video" alt="How to care for banneton" src="https://www.youtube.com/embed/bWNBbrk-crk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+      </section>
+    </div>
+
+<div>
+    <div class="form-container">
+      <section id="newsletter">
+        <h2>Subscribe to our newsletter</h2>
+        <p class="newsletter-desc">If you want to receive more information on our products and be notified of sales, please fill out the form below:</p>
+        <form class="newsletter-form" id="form" action="https://www.freecodecamp.com/email-submit">
+          <div class="form-group">
+            <label id="first-name-label" for="first-name">First Name:</label>
+              <input 
+                 name="first-name"
+                 id="first-name"
+                 type="text"
+                 class="form-control"
+                 placeholder="Enter your first name here"
+                 required
+            />
+          </div>
+          
+          <div class="form-group">
+            <label id="last-name-label" for="last-name">Last Name:</label>
+              <input
+                  name="last-name"
+                  id="last-name"
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter your last name here"
+                  required
+               />
+          </div>
+          
+          <div class="form-group">
+            <label id="email-label" for="email">Email:</label>
+              <input
+                  name="email"
+                  id="email"
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email here"
+                  required
+              />
+          </div>
+          
+          <div class="form-group">
+            <label id="tel-label" for="tel">Tel:</label>
+              <input
+                  name="tel"
+                  id="tel"
+                  type="tel"
+                  class="form-control"
+                  placeholder="04 XX XXX XXX"
+              />
+          </div>
+          
+          <div class="form-group">
+            <label id="contact-label" for="contact">Prefer Contact Method:</label>
+            <label>
+              <input
+                  name="pref-contact"
+                  value="Email"
+                  type="radio"
+                  class="input-radio"
+               />Email
+            </label>
+            
+            <label>
+              <input
+                  name="pref-contact"
+                  value="Phone"
+                  type="radio"
+                  class="input-radio"
+                  />Phone
+            </label>    
+          </div>
+          
+          <div class="form-group">
+              <input
+                  name="submit"
+                  value="Submit" style="color: white"
+                  type="submit"
+                  id="submit"
+                  class="form-control"
+               />
+          </div>
+        </form>
+      </section>
+    </div>
+   </body>
+   </div>
+
+  <!--Footer-->
+  <div>
+   <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>Copyright 2020, Original Banneton Baskets</span>
+    </footer>
+ </div>
