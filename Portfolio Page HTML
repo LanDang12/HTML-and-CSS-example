@@ -1,0 +1,156 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="main-doc">
+<!--Nav Section-->
+<nav id="navbar" class="nav">
+  <ul class="nav-list">
+    <li> <a href="#welcome-section">Welcome</a></li>
+    <li> <a href="#projects">My Portfolio</a></li>
+    <li> <a href="#about">About</a></li>
+    <li> <a href="#contacts">Contacts</a></li>
+  </ul>
+</nav>
+
+
+<!--Welcome Sec-->
+<section id="welcome-section" class="welcome-section">
+  <h1>Hello (Xin Chào);<h1>
+    <p>I am Lan Dang, a recent business intelligence and analyst graduate.</p>
+    <a href="#projects">
+    <i class="fa fa-chevron-down"></i>
+    </a>
+</section>
+
+
+<!--Portfolio Section-->
+<section id="projects" class="projects-section">
+  <h2 class="projects-section-header">Here are some of my examplary projects</h2>
+  
+  <div class="projects-grid">
+    <a
+       href="https://codepen.io/landang12/full/ZEXmgRw"
+       target="_blank"
+       class="project-tile"
+       >
+       <img
+            src="https://i.imgur.com/EwXVGCV.png"
+            alt="Tribute Page photo"
+            class="project-snapshot"
+            >
+       <p class="project-title">
+            <span class="code">&lt;</span>
+            Tribute Page
+            <span class="code">&gt;</span>
+       </p>
+    </a>
+    
+    <a
+       href="https://codepen.io/landang12/full/RwLEYGN"
+       target="_blank"
+       class="project-tile"
+       >
+       <img
+            src="https://i.imgur.com/O3QZpWD.png"
+            alt="Survey Page photo"
+            class="project-snapshot"
+            >
+       <p class="project-title">
+            <span class="code">&lt;</span>
+            Survey Page
+            <span class="code">&gt;</span>
+       </p>
+    </a>
+
+    <a
+       href="https://codepen.io/landang12/full/OJxqjqR"
+       target="_blank"
+       class="project-tile"
+       >
+       <img
+            src="https://i.imgur.com/olwn2CS.png"
+            alt="Product Lanning Page photo"
+            class="project-snapshot"
+            >
+       <p class="project-title">
+            <span class="code">&lt;</span>
+            Product Lanning Page
+            <span class="code">&gt;</span>
+       </p>
+    </a>
+    
+    <a
+       href="https://codepen.io/landang12/full/bGoXjeg"
+       target="_blank"
+       class="project-tile"
+       >
+       <img
+            src="https://i.imgur.com/kHnncVM.png"
+            alt="Python Technical Page photo"
+            class="project-snapshot"
+            >
+       <p class="project-title">
+            <span class="code">&lt;</span>
+            Python Technical Page
+            <span class="code">&gt;</span>
+       </p>
+    </a>
+  </div>
+  
+  <a
+     href="https://codepen.io/landang12"
+     class="btn btn-show-more"
+     target="_blank"
+     >Show More<i class="fa fa-chevron-right"></i>
+  </a>
+</section>
+
+<!--About Sec-->
+<section id="about" class="about-section">
+  <div class="about-me">
+  <h2 class="about-section-header">About Me</h2>
+    <p>I am a recently graduated student who was enrolled in Bachelor of Commerce (Liberal Studies) at the University of Sydney. As a graduate student, I want to begin my career in the business and/or system information industry, and I believe that I can dedicate all my time and efforts to meet the company’s requirements.</p>
+    <br></br>
+    <p>I understand there is always room for growth; hence, I am very receptive to all forms of feedback, which can help me incorporating myself into the new workplace environment more efficiently. During my internship and years as a student, I have shown myself to be a strong team player through different company and group projects. My supervisor had commented that I have a high work ethic with a willingness to contribute to the organisational learning process and even offered me a position in the company, however, I turned them down to focus on my study and my future career in this industry.</p>
+  <br></br>
+    <p>Communicational skills are something I have honed during my stay in Australia, especially while studying at the University of Sydney. I understand the basis of getting my point across is having good English and have achieved maximum scores in both the listening and speaking sections of PTE Academic. In addition, I am also an active listener, being able to give full concentration to whoever is speaking and display cues on whether I understand them or not.</p>
+  </div>
+</section>
+  
+<!--Contacts Sec-->
+<section id="contacts" class="contact-section">
+  <div class="contacts-section-header">
+    <h2>Let's collaborate in the future</h2>
+    <p>Feel free to contact me through:</p>
+  </div>
+  
+  <div class="contacts-link">
+    <a
+       href="https://www.facebook.com/lan.the.5/"
+       class="btn contact-details"
+       target="_blank"
+       ><i class="fa fa-facebook-square"></i>Facebook
+    </a>
+    
+     <a
+       id="profile-link"
+       href="https://github.com/LanDang12?tab=overview&from=2021-12-01&to=2021-12-31"
+       class="btn contact-details"
+       target="_blank"
+       ><i class="fa fa-github"></i>GitHub
+    </a>
+    
+     <a
+       href="https://www.linkedin.com/in/lan-dang-ba2535175/"
+       class="btn contact-details"
+       target="_blank"
+       ><i class="fa fa-linkedin"></i>LinkedIn
+    </a>
+    
+    <a href="mailto:xxxlxxx@outlook.com" class="btn contact-details"
+      ><i class="fa fa-at"></i>Send an e-mail to xxxlxxx@outlook.com</a>
+    
+    <a href="tel:+04xxyyzzvv" class="btn contact-details"
+      ><i class="fas fa-mobile-alt"></i>Call me through 04xx-yyz-zvv</a>
+  </div>
+</section>
+<!--End-->
+</div>
